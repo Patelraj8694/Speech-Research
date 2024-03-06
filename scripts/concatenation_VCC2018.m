@@ -11,7 +11,7 @@ filelist1=dir(['../dataset/features/US_102/Whisper/mcc/*.mcc']);
 dim=40;result=[];mpsrc=[];mptgt=[];t_scores=[];l=[];lz=[];wr=[];mpsrc1=[];mptgt1=[];Z1=[];Z=[];Z2=[];
 x=[];y=[];X=[];Y=[];path=[];
 
-for index=1:length(filelist)
+for index = 1:min(length(filelist), length(filelist1))
 
     fprintf('Processing %s\n',filelist(index).name);
 
