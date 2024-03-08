@@ -32,9 +32,9 @@ for index = 1:min(length(filelist), length(filelist1))
 end
 
 Z=[X];
-save(['../dataset/features/US_102/Normal/Z.mat'],'Z'); 
+save(['../dataset/features/US_102/Normal/Z.mat'],'Z', '-v7.3'); 
 Z=[Y];
-save(['../dataset/features/US_102/Normal/Z_vuv.mat'],'Z');
+save(['../dataset/features/US_102/Normal/Z_vuv.mat'],'Z', '-v7.3');
 
 
 
